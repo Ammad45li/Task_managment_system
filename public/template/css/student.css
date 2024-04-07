@@ -1,0 +1,75 @@
+/* dashboard.css */
+
+#container {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* dashboard.css */
+
+
+.card-header {
+    animation: changeHeaderColor 9s infinite; /* 3 colors, each lasting for 3 seconds */
+    color: #fff;
+}
+
+/* ... (rest of your styles) */
+
+
+.card-title {
+    margin-bottom: 0;
+    animation: rotateTitle 10s ease-in-out infinite;
+}
+
+@keyframes rotateTitle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card-body {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Default color, replace with your preferred color */
+    animation: scaleUp 1s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Add more styles as needed */
